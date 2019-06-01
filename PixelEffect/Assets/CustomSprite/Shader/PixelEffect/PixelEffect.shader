@@ -4,14 +4,15 @@
     {
 		[HideInInspector]
         _MainTex("Texture", 2D) = "white" {}
-
+        
+        [HDR]
 		_Color("Color", Color) = (1, 1, 1, 1)
 		
 		_SphereSize("Sphere Size", Range(0, 1)) = 1
 		
 		_Scale("Scale", Range(1, 1000)) = 500
 
-		_Threshold("Threshold", Range(0, 1.2)) = 0
+		_Threshold("Threshold", Range(-0.1, 1.2)) = 0
 
 		_LineWidth("LineWidth", Range(0, 10)) = 2
 
@@ -21,7 +22,7 @@
 
 		_ChangeAlphaSpeed("Change Alpha Speed", Range(0, 10)) = 3
 
-		_AnimSpeed("Anim Speed", Range(0, 5)) = 1
+		//_AnimSpeed("Anim Speed", Range(0, 5)) = 1
 
 		[KeywordEnum(Sphere, Arrow, Heart)]
 		_Type("Type", float) = 0
@@ -114,7 +115,7 @@
 
 				blockUV.y += blockDist;
 
-				fixed scale = _Scale * (_Threshold + frac(_Time.y * _AnimSpeed));
+				fixed scale = _Scale * _Threshold;//(_Threshold + frac(_Time.y * _AnimSpeed));
 
 				blockDist = distance(fixed2(centerBlock, centerBlock), blockUV);
 			
