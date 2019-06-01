@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AnimSpeed: 0.18
+    - _AnimSpeed: 0.5
     - _ChangeAlphaSpeed: 2
     - _LineWidth: 3
     - _MaxAlpha: 1
@@ -32,7 +32,7 @@ Material:
     - _RingWidth: 0.1
     - _Scale: 57
     - _SphereSize: 0.274
-    - _Threshold: 0
+    - _Threshold: 0.386
     - _Type: 0
     m_Colors:
-    - _Color: {r: 1, g: 0.53705585, b: 0, a: 1}
+    - _Color: {r: 1.0592737, g: 0.8540741, b: 0, a: 1}
